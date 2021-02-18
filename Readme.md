@@ -1,4 +1,4 @@
-# Foobar
+# Vestigium
 
 Python implementation of 2020 Code Jam Qualification Problem - Vestigium
 

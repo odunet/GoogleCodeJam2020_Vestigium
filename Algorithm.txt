@@ -1,0 +1,43 @@
+"""
+Algo
+1) Take in number of iterations iter
+2) Make a for loop for the number of "iter"
+	3) For every "iter"
+		i) take the size of the square matrix "n"
+		ii) create an empty list "matrix"
+		iii) Make a for loop for the size of the matrix "n"
+		iv) let rowFail = 0
+		v) For every "n"
+			a) Take in the first row of the matrix  
+			b) save line in a comma seperated list "matrixRow"
+			c) sort "matrixRow" and save as "sortMatrixRow" (Apply the sort function on a deepcopy of the list)
+			d) let sequence = 1
+			e) for i in "sortMatrixRow"
+				if (sequence != i){
+					rowFail += 1
+					break
+				}
+				sequence += 1
+			d) append "matrixRow" to the "matrix"
+		//Create a matrix of columns
+		vi) create an empty matrix of columns "columnMatrix"
+		vii) let colFail = 0
+		viii) trace = 0
+		ix) for each column in matrix[columns][rows].lenghth
+			I) create a empty matrix "matrixCol"
+			II) for each row in matrix[columns][rows].lenghth
+				A) if (column == row) {
+					trace += matrix[columns][rows]
+				}
+				B) append "matrixCol" with each item (i.e. matrix[rows][column])of ith column
+			III)sort "matrixCol" and save as "sortMatrixCol" (Apply the sort function on a deepcopy of the list)
+			IV)let sequence = 1
+			V) for i in "sortMatrixCol"
+				if (sequence != i){
+					colFail += 1
+					break
+				}
+				sequence += 1
+			VI) append "columnMatrix" with "matrixCol"
+	print ( "Case #{}: {} {} {}".format(rowFail, colFail, trace) )
+"""
